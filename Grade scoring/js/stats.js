@@ -46,7 +46,10 @@ export function getLastGrade(grades) {
  * @param {array} grades
  */
 export function isTestTooEasy(grades) {
-    // your code
+    if (grades.includes(20)) {
+        return "Easy"
+    }
+    return "Difficult"
 }
 
 /**
